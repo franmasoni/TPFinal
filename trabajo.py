@@ -17,3 +17,15 @@ class Trabajo:
         self.retirado = retirado
         self.id_trabajo = id_trabajo
 
+    def __str__(self):
+        cadena = f"Cliente: \n"
+        cadena+= f"{self.cliente}\n"
+        cadena+= f"Trabajo: \n"
+        cadena+= f"Id del trabajo: {self.id_trabajo}\n"
+        cadena+= f"Fecha de ingreso: {self.fecha_ingreso}\n"
+        cadena+= f"Fecha de entrega propuesta: {self.fecha_entrega_propuesta}\n"
+        cadena+= f"Fecha de entrega real: {self.fecha_entrega_real}\n"
+        cadena+= f"Descripcion: {self.descripcion}\n"
+        cadena+= f"Retirado: {self.retirado}"
+        return cadena
+
